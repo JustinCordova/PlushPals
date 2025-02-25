@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django
+*.sqlite3
+db.sqlite3
+
+# Virtual environments
+venv/
+.env/
+*.env
+
+# Editor & OS files
+*.swp
+*.swo
+.idea/
+.vscode/
