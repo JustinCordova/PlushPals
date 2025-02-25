@@ -19,16 +19,16 @@ The goal of this project is to create a Django-powered website where users can b
    - Feedback report listing all user comments.
 
 ## III. Simplified File Structure
-product_showcase/
+```product_showcase/
 ├── manage.py
 ├── product_showcase/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
 ├── products/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── admin.py
 │   ├── models.py
 │   ├── urls.py
@@ -42,8 +42,8 @@ product_showcase/
 │   └── reports/
 │       └── feedback_report.html
 └── static/
-└── (CSS, images)
-
+    └── (CSS, images)
+```
 ## IV. Project Requirements
 
 1. **Models:**
