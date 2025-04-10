@@ -1,13 +1,12 @@
 #main-navigation {
     background-color: #ffe0ec;
-    padding: 0.5rem 0; /* reduce vertical space */
+    padding: 0.5rem 0;
     border-bottom: 2px solid #ffcdd2;
   }
   
-  /* container tweak: align left instead of centered */
   #main-navigation .container {
-    max-width: none; /* remove max-width */
-    padding: 0 2rem;  /* add spacing from edges */
+    max-width: none;
+    padding: 0 2rem;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -34,13 +33,13 @@
   
   /* Logo size – keep it big, but prevent nav from stretching */
   .brand-logo img {
-    width: 60px;  /* still big */
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ffcdd2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
-    flex-shrink: 0;         /* don’t shrink in flexbox */
+    flex-shrink: 0;
     display: block;
   }
   
