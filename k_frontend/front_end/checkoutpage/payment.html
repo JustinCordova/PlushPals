@@ -1,0 +1,239 @@
+<!--DEVELOPER Katelyn Reyes, IS117-003, Fall 2024-->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JayStarCrochet</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet">
+
+
+    <!-- Navigation Bar-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-md 
+                    justify-content-start
+                    col-12 navbar-dark" style="background-color: #648186;">
+
+                <!-- Brand -->
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../images/jaystarcrochetlogo.png" alt="Logo" style="width:170px;">
+                  </a>
+
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                         <!-- Shop Now Dropdown -->
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop Now
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../shopnow/allitems.html">All Items</a>
+                                <a class="dropdown-item" href="../shopnow/bags.html">Bags</a>
+                                <a class="dropdown-item" href="../shopnow/animals.html">Animals</a>
+                                <a class="dropdown-item" href="../shopnow/pokemon.html">Pokemon</a>
+                                <a class="dropdown-item" href="../shopnow/charms.html">Charms</a>
+                            </div>
+                        <!-- About Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../aboutpage/shipping.html">Shipping</a>
+                                <a class="dropdown-item" href="../aboutpage/returns.html">Returns</a>
+                            </div>
+                        </li>
+                        <!--Links-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../checkoutpage/yourshoppingcart.html">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+</div>
+
+<div class="container">
+  <div class="text-center display-5 mt-5 mb-4" style="font-family: Georgia, serif;">Check Out</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--FORM-->
+        <div class="col-md-7">
+          <div class="card-transparent mx-5 my-">
+            <form class="row g-3">
+              <h5 id="heading">Contact</h5>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="col-md-6">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+              <div class="col-12">
+                <h5 id="heading" class="mt-3">Delivery</h5>
+                <div class="col-md-12 mt-3">
+                  <select id="inputCountry" class="form-select">
+                    <option selected>Country</option>
+                    <option>New Jersey</option>
+                    <option>New York</option>
+                    <option>California</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control mt-3" id="inputAddress" placeholder="Address">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="inputCity" placeholder="City">
+              </div>
+              <div class="col-md-4">
+                <select id="inputState" class="form-select">
+                  <option selected>State</option>
+                  <option>New Jersey</option>
+                  <option>New York</option>
+                  <option>California</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+              </div>
+              <h5 id="heading" class="mt-5">Payment</h5>
+              <div class="col-md-12">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Card number">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Expiration date (MM / YY)">
+              </div>
+              <div class="col-md-6">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Security code">
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Name on Card">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Delivery and billing address are the same
+                </label>
+              </div>
+              <!--BUTTON-->
+              <div class="col-12">
+                <button type="button" class="btn btn-lg w-100 mt-2" style="background-color: #648186; color: white;">Pay Now</button>
+                <br>
+                <br>
+                <br>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <!--Cart-->
+        <div class="col-md-5">
+          <div class="card-transparent">
+            <div class="card-body">
+              <div class="row d-flex align-items-center">
+                <div class="col-xs-4 col-sm-2 col-md-3 col-lg-2">
+                  <img src="../images/carrotbunnyanimal.jpg" alt="Bunny with Carrot Crochet" class="img-fluid" style="border: 1px solid #648186;">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <h5 id="itemdescription">Carrot Bunny</h5>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                    <h5 id="itemdescription" >$30.00</h5>
+                </div>
+              </div>
+            </div>
+  
+        
+            <div class="card-body">
+              <div class="row d-flex align-items-center">
+                <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                  <img src="../images/patchworktote.jpg" alt="Patchwork Tote" class="img-fluid" style="border: 1px solid #648186;">
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <h5 id="itemdescription">Patchwork Tote</h5>
+                </div>
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                  <h5 id="itemdescription" >$30.00</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="row d-flex align-items-center">
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <h5 id="itemdescription">Subtotal</h5>
+                </div>
+              <div class="col-xs-2 col-sm-4 col-md-3 col-lg-6 d-flex justify-content-center">
+                  <h5 class="text-end" id="itemdescription" >$60.00</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row d-flex align-items-center">
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <h5 id="itemdescription">Shipping</h5>
+                </div>
+              <div class="col-xs-2 col-sm-4 col-md-3 col-lg-6 d-flex justify-content-center">
+                  <h5 class="text-end" id="itemdescription" >$10.00</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row d-flex align-items-center">
+                <div class="col-xs-2 col-sm-4 col-md-3 col-lg-3 d-flex justify-content-center">
+                    <h4>Total</h4>
+                </div>
+              <div class="col-xs-2 col-sm-4 col-md-3 col-lg-6 d-flex justify-content-center">
+                  <h4 class="text-end">$70.00</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!--Footer-->
+<br>
+<br>
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Katelyn Reyes, 2024 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>

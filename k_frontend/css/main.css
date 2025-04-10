@@ -1,0 +1,72 @@
+/* DEVELOPER Katelyn Reyes, IS117-003, Fall 2024 */
+
+#carouselbutton {
+    background-color: #F0DCB2;
+}
+
+#Heading {
+    color:#515354;
+    font-family:Georgia, serif;
+    font-weight:700;
+}
+
+#itemheading {
+    color:#515354;
+    font-family:'Darker Grotesque', sans-serif;
+    font-weight:700;
+}
+#price {
+    color:#648186;
+    font-family:'Darker Grotesque', sans-serif;
+    font-weight: 700;
+}
+
+#inputZip {
+    background-color: #eaeaea
+}
+
+#QuantityButton {
+    color: #aaaaaa;
+}
+
+#itemdescription {
+    color:#454849;
+    font-family:'Darker Grotesque', sans-serif;
+    font-weight: 450;
+    font-size: 125%;
+}
+
+#itemdescription p{
+    margin-bottom: 6px;
+}
+
+#header {
+    color:#171919;
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+
+#cartheading {
+    color:#BEBCBC;
+    font-family:'Darker Grotesque', sans-serif;
+    font-weight:500;
+    font-size: 125%;
+}
+.form-group label {
+    font-family:'Darker Grotesque', sans-serif;
+    font-weight:700;
+    font-size: 110%;
+    margin-top: 3%;
+
+}
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cadcdf;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
