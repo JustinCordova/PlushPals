@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'app.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  {% block css_files %}{% endblock %}
+</head>
+<body>
+  <header id="main-navigation">
+    <div class="container">
+        <h1 class="brand-logo">
+            <a href="{% url 'home-page' %}">
+              <img src="{% static 'store/images/plushpals_logo.png' %}" alt="Plush Pals Logo">
+              Plush Pals
+            </a>
+          </h1>
+          
+      <nav>
+        <ul>
+          <li><a href="{% url 'home-page' %}">Home</a></li>
+          <li><a href="{% url 'shop-page' %}">Shop</a></li>
+          <li><a href="{% url 'about-page' %}">About</a></li>
+          <li><a href="{% url 'contact-page' %}">Contact</a></li>
+          <li><a href="{% url 'feedback-page' %}">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

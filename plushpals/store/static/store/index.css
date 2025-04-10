@@ -1,0 +1,137 @@
+/* Global Font Setup */
+body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* Welcome Section */
+  #welcome {
+    text-align: center;
+    background: linear-gradient(145deg, #ffe4f0, #fff1f7);
+    padding: 1.5rem 1rem 1rem; /* significantly reduced padding */
+    border-bottom: 1px solid #ffcdd2;
+    box-shadow: 0 1px 5px rgba(255, 192, 203, 0.05);
+  }
+  
+  
+  #welcome img {
+    width: 100px; /* was 160px */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem; /* tighter space */
+    border: 3px solid #ffd6e8;
+  }
+  
+  #welcome h2 {
+    font-size: 2.2rem; /* was 3rem */
+    color: #d81b60;
+    margin-bottom: 0.25rem;
+  }
+  
+  #welcome p {
+    font-size: 1.1rem; /* slightly smaller */
+    color: #444;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+  
+  
+  
+  /* Featured Products */
+  #featured-products {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 3rem; /* minimal top padding */
+    text-align: center;
+  }
+  
+  
+  
+  #featured-products h2 {
+    font-size: 2.6rem;
+    color: #c2185b;
+    margin-bottom: 2rem;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  .product-card {
+    background: #fff0f6;
+    padding: 1.5rem;
+    border-radius: 16px;
+    width: 240px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card h3 {
+    font-size: 1.3rem;
+    color: #b71c5c;
+    margin-bottom: 0.3rem;
+  }
+  
+  .product-card p {
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #fffafa;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.4rem;
+    color: #ad1457;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 1.7;
+  }
+  
+  /* Optional: Responsive tweaks */
+  @media (max-width: 768px) {
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 90%;
+    }
+  
+    #welcome h2 {
+      font-size: 2.3rem;
+    }
+  
+    #about h2,
+    #featured-products h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  

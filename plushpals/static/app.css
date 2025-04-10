@@ -1,0 +1,66 @@
+#main-navigation {
+    background-color: #ffe0ec;
+    padding: 0.5rem 0; /* reduce vertical space */
+    border-bottom: 2px solid #ffcdd2;
+  }
+  
+  /* container tweak: align left instead of centered */
+  #main-navigation .container {
+    max-width: none; /* remove max-width */
+    padding: 0 2rem;  /* add spacing from edges */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Brand block */
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  
+  /* Brand link & alignment */
+  .brand-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #d81b60;
+    font-weight: bold;
+    gap: 0.5rem;
+  }
+  
+  /* Logo size – keep it big, but prevent nav from stretching */
+  .brand-logo img {
+    width: 60px;  /* still big */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffcdd2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    flex-shrink: 0;         /* don’t shrink in flexbox */
+    display: block;
+  }
+  
+  /* Nav links */
+  #main-navigation nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #main-navigation nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  #main-navigation nav a:hover {
+    color: #e91e63;
+  }
+  

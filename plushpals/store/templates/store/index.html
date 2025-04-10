@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Plush Pals Store
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'store/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero / Welcome Section -->
+<section id="welcome">
+  <header>
+    <!--<img src="{% static 'store/images/plushpals_logo.png' %}" alt="Logo" /> -->
+    <h2>Welcome to Plush Pals</h2>
+  </header>
+  <p>
+    Discover premium, cuddly plushies that bring joy to all ages. Whether it’s a gift or a cozy companion, Plush Pals has your next favorite plush.
+  </p>
+</section>
+
+<!-- Featured Products Section -->
+<section id="featured-products">
+  <h2>Featured Plushies</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="{% static 'store/images/tulipbunnyanimal.jpg' %}" alt="Flower Bunny Plush">
+      <h3>Flower Bunny</h3>
+      <p>$24.99</p>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'store/images/dragonanimal.jpg' %}" alt="Dragon Plush">
+      <h3>Dragon</h3>
+      <p>$19.99</p>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'store/images/carrotbunnyanimal.jpg' %}" alt="Carrot Bunny Plush">
+      <h3>Carrot Bunny</h3>
+      <p>$21.99</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Plush Pals</h2>
+  <p>
+    At Plush Pals, we believe that everyone deserves a soft friend. We curate plush toys made with the highest quality materials to ensure maximum comfort, charm, and joy.
+  </p>
+</section>
+
+{% endblock %}
