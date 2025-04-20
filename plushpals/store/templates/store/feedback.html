@@ -6,20 +6,55 @@ Plush Pals Feedback
 {% endblock %} 
 
 {% block css_files %}
-  <!-- <link rel="stylesheet" href="{% static "blog/shop.css" %}" /> -->
+<link rel="stylesheet" href="{% static 'store/feedback.css' %}">
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
+<section id="feedback">
+
   <header>
-    <img src="{% static "store/images/..." %}" alt="" />
+    <img src="{% static 'store/images/...' %}" alt="" />
     <h2>Plush Pals Feedback</h2>
   </header>
-  <p>TESTTINGGGGGGGGG</p>
 </section>
 
-<section id="x">
+<div class = "products-info">
+
+  <section class = "image"></section>
+  <section class i= "info">
+
+    <h3>NAME AND SHI</h3>
+    <p>PRODUCT INFO AND SHI</p>
+  </section>
+
+</div>
+
+<div class = "reviews"></div>
+
+<section class="form-stuff">
   <h2>hi</h2>
+</section>
+<section class="actual-reviews">
+  <section class="review-card">
+    <h3>NAME</h3>
+    <div>STARS</div>
+    <p>ACTUAL REVIEW COMMENT</p>
+  </section>
+  <section class="review-card">
+    <h3>NAME</h3>
+    <div>STARS</div>
+    <p>ACTUAL REVIEW COMMENT</p>
+  </section>
+  <section class="review-card">
+    <h3>NAME</h3>
+    <div>STARS</div>
+    <p>ACTUAL REVIEW COMMENT</p>
+  </section>
+  <section class="review-card">
+    <h3>NAME</h3>
+    <div>STARS</div>
+    <p>ACTUAL REVIEW COMMENT</p>
+  </section>
 </section>
 
 {% endblock %}
