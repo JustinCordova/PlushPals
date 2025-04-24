@@ -3,6 +3,10 @@
 
 {% block title %}{{ product.name }} - Plush Pals{% endblock %}
 
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'store/product_detail.css' %}">
+{% endblock %}
+
 {% block content %}
 <section id="product-detail">
   <div class="product-wrapper">

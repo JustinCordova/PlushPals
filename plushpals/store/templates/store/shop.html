@@ -1,4 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block title %}Shop{% endblock %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'store/shop.css' %}">
+{% endblock %}
 {% block content %}
 <section id="shop">
   <h2>All Plushies</h2>
