@@ -1,8 +1,14 @@
-.products-info{
-    background-color: #0000ff;
+.feedback-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
-.products-info .image{
-    background-color: yellowgreen;
-    height: 2rem;
 
+.feedback-card {
+  background-color: #fff0f6;
+  border-left: 4px solid #d81b60;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }

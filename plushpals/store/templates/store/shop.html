@@ -1,25 +1,18 @@
-{% extends "base.html" %} 
-{% load static %}
-
-{% block title %} 
-Plush Pals Store
-{% endblock %} 
-
-{% block css_files %}
-  <!-- <link rel="stylesheet" href="{% static "blog/shop.css" %}" /> -->
-{% endblock %}
-
+{% extends "base.html" %} {% load static %} {% block title %}Shop{% endblock %}
 {% block content %}
-<section id="welcome">
-  <header>
-    <img src="{% static "store/images/..." %}" alt="" />
-    <h2>Plush Pals Store</h2>
-  </header>
-  <p>TESTTINGGGGGGGGG</p>
+<section id="shop">
+  <h2>All Plushies</h2>
+  <div class="product-grid">
+    {% for product in products %}
+    <a href="{{ product.get_absolute_url }}" class="product-card">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+      <h3>{{ product.name }}</h3>
+      <p>${{ product.price }}</p>
+      <p>{{ product.description }}</p>
+    </a>
+    {% empty %}
+    <p>No products available right now!</p>
+    {% endfor %}
+  </div>
 </section>
-
-<section id="x">
-  <h2>hi</h2>
-</section>
-
 {% endblock %}

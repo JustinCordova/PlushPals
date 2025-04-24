@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ product.name }} - Plush Pals{% endblock %}
+
+{% block content %}
+<section id="product-detail">
+  <div class="product-wrapper">
+    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    <div class="product-info">
+      <h2>{{ product.name }}</h2>
+      <p class="price">${{ product.price }}</p>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
