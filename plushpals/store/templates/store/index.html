@@ -1,15 +1,7 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}
-Plush Pals Store
-{% endblock %}
-
-{% block css_files %}
-  <link rel="stylesheet" href="{% static 'store/index.css' %}">
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title %} Plush Pals Store
+{% endblock %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'store/index.css' %}" />
+{% endblock %} {% block content %}
 
 <!-- Hero / Welcome Section -->
 <section id="welcome">
@@ -18,7 +10,8 @@ Plush Pals Store
     <h2>Welcome to Plush Pals</h2>
   </header>
   <p>
-    Discover premium, cuddly plushies that bring joy to all ages. Whether it’s a gift or a cozy companion, Plush Pals has your next favorite plush.
+    Discover premium, cuddly plushies that bring joy to all ages. Whether it’s a
+    gift or a cozy companion, Plush Pals has your next favorite plush.
   </p>
 </section>
 
@@ -27,23 +20,31 @@ Plush Pals Store
   <h2>Featured Plushies</h2>
   <div class="product-grid">
     {% for product in featured_products %}
-      <div class="product-card">
-        <img src="{{ product.image.url }}" alt="{{ product.name }}">
-        <h3>{{ product.name }}</h3>
-        <p>${{ product.price }}</p>
-      </div>
+    <div class="product-card">
+      {% if product.image %}
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+      {% else %}
+      <img
+        src="{% static 'store/images/default_plush.png' %}"
+        alt="No image available"
+      />
+      {% endif %}
+      <h3>{{ product.name }}</h3>
+      <p>${{ product.price }}</p>
+    </div>
     {% empty %}
-      <p>No featured plushies right now!</p>
+    <p>No featured plushies right now!</p>
     {% endfor %}
   </div>
 </section>
-
 
 <!-- About Section -->
 <section id="about">
   <h2>About Plush Pals</h2>
   <p>
-    At Plush Pals, we believe that everyone deserves a soft friend. We curate plush toys made with the highest quality materials to ensure maximum comfort, charm, and joy.
+    At Plush Pals, we believe that everyone deserves a soft friend. We curate
+    plush toys made with the highest quality materials to ensure maximum
+    comfort, charm, and joy.
   </p>
 </section>
 
