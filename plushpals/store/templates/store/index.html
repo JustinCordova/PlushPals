@@ -26,23 +26,18 @@ Plush Pals Store
 <section id="featured-products">
   <h2>Featured Plushies</h2>
   <div class="product-grid">
-    <div class="product-card">
-      <img src="{% static 'store/images/tulipbunnyanimal.jpg' %}" alt="Flower Bunny Plush">
-      <h3>Flower Bunny</h3>
-      <p>$24.99</p>
-    </div>
-    <div class="product-card">
-      <img src="{% static 'store/images/dragonanimal.jpg' %}" alt="Dragon Plush">
-      <h3>Dragon</h3>
-      <p>$19.99</p>
-    </div>
-    <div class="product-card">
-      <img src="{% static 'store/images/carrotbunnyanimal.jpg' %}" alt="Carrot Bunny Plush">
-      <h3>Carrot Bunny</h3>
-      <p>$21.99</p>
-    </div>
+    {% for product in featured_products %}
+      <div class="product-card">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h3>{{ product.name }}</h3>
+        <p>${{ product.price }}</p>
+      </div>
+    {% empty %}
+      <p>No featured plushies right now!</p>
+    {% endfor %}
   </div>
 </section>
+
 
 <!-- About Section -->
 <section id="about">

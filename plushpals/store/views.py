@@ -4,7 +4,8 @@ from .models import Product, Feedback
 # Create your views here.
 
 def home(request):
-    return render(request, 'store/index.html')
+    featured_products = Product.objects.filter(is_featured=True)
+    return render(request, 'store/index.html', {'featured_products': featured_products})
 
 def shop(request):
     products = Product.objects.all()
