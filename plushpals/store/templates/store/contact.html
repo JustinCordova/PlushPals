@@ -1,25 +1,28 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% load static %}
 
-{% block title %} 
-Plush Pals Contact
-{% endblock %} 
+{% block title %}Plush Pals Contact{% endblock %}
 
 {% block css_files %}
-  <link rel="stylesheet" href="{% static "blog/contact.css" %}" />
+  <link rel="stylesheet" href="{% static 'store/contact.css' %}">
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
+<section id="contact-hero">
   <header>
-    <img src="{% static "store/images/..." %}" alt="" />
-    <h2>Plush Pals Contact</h2>
+    <h2>Contact Plush Pals</h2>
   </header>
-  <p>TESTTINGGGGGGGGG</p>
+  <p>Have questions, custom requests, or just want to say hi? We’d love to hear from you!</p>
 </section>
 
-<section id="x">
-  <h2>hi</h2>
+<section id="contact-form">
+  <h3>Send Us a Message</h3>
+  <form action="#" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
 </section>
-
 {% endblock %}
