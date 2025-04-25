@@ -1,50 +1,25 @@
-{% extends "base.html" %} 
-{% load static %}
-
-{% block title %} 
-About
-{% endblock %} 
-
+{% extends "base.html" %} {% load static %} {% block title %}About{% endblock %}
 {% block css_files %}
-  <link rel="stylesheet" href="{% static "blog/about.css" %}" />
-{% endblock %}
-
-{% block content %}
-<section id="welcome">
+<link rel="stylesheet" href="{% static 'store/about.css' %}" />
+{% endblock %} {% block content %}
+<section id="about-hero">
   <header>
     <img src="{% static "store/images/..." %}" alt="" />
-    <h2>About Plush Pals</h2>
+    <h2>Plush Pals About hello</h2>
   </header>
-  <p>
-    Welcome to Plush Pals – your cozy destination for adorable, high-quality plush toys! 
-    Whether you're a collector, a gift-giver, or just love snuggling up with something soft, 
-    we've got the perfect pal for you.
-  </p>
+  <p>TESTTINGGGGGGGGG</p>
 </section>
 
 <section id="x">
-  <h2>Our Mission</h2>
-  <p>
-    At Plush Pals, we believe everyone deserves a little comfort and joy. 
-    That's why we carefully design and curate every plush with love, creativity, and care.
-  </p>
+  <h2>hi</h2>
 </section>
 
-<section id="team">
-  <h2>Meet the Team</h2>
+<section id="about-team">
+  <h2>Meet the Makers</h2>
   <p>
-    We're a small, passionate team of designers, dreamers, and plushie fanatics based in Newark, NJ.
-    From sketching new characters to packaging your order with a handwritten thank-you note, 
-    we put our hearts into everything we do.
+    From designers to packers, our small team is dedicated to spreading cheer
+    one plush at a time. We’re artists, storytellers, and soft-stuffing experts
+    — and we’re so happy you’re here.
   </p>
 </section>
-
-<section id="contact">
-  <h2>Get in Touch</h2>
-  <p>
-    Have questions or just want to say hi? Reach out to us on our 
-    <a href="/contact">Contact Page</a> – we’d love to hear from you!
-  </p>
-</section>
-
 {% endblock %}
