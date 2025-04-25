@@ -8,15 +8,35 @@
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
+<section id="contact-header">
   <header>
     <img src="{% static "store/images/..." %}" alt="" />
     <h2>Plush Pals Contact</h2>
   </header>
-  <p>TESTTINGGGGGGGGG</p>
+  <p>We'd love to hear from you! Send us your questions, suggestions, or just say hi.</p>
 </section>
 
-<section id="x">
-  <h2>hi</h2>
+<section id="contact-info">
+  <h3>Our Info</h3>
+  <p>Email: support@plushpals.com</p>
+  <p>Phone: (123) 456-7890</p>
+  <p>Address: 123 Cozy Lane, Plushville, CA 90210</p>
+</section>
+
+<section id="contact-form">
+  <h3>Send Us a Message</h3>
+  <form method="post" action="/contact/">
+    {% csrf_token %}
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
 </section>
 {% endblock %}
