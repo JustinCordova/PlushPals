@@ -10,16 +10,41 @@ Plush Pals Contact
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
-  <header>
-    <img src="{% static "store/images/..." %}" alt="" />
-    <h2>Plush Pals Contact</h2>
-  </header>
-  <p>TESTTINGGGGGGGGG</p>
+<section id="contact-header">
+  <h2>We’d Love to Hear From You!</h2>
+  <p>Got a question, concern, or just want to share your love for plushies? We're all ears (and fluff)!</p>
 </section>
 
-<section id="x">
-  <h2>hi</h2>
+<section id="contact-details">
+  <h3>Contact Information</h3>
+  <ul>
+    <li><strong>Email:</strong> support@plushpals.com</li>
+    <li><strong>Phone:</strong> (123) 456-7890</li>
+    <li><strong>Address:</strong> 123 Cuddle Lane, Newark, NJ 07102</li>
+  </ul>
+</section>
+
+<section id="contact-form">
+  <h3>Send Us a Message</h3>
+  <form method="post" action="/contact/submit/">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 {% endblock %}
