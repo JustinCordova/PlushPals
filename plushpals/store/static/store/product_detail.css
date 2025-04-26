@@ -32,4 +32,90 @@
     color: #444;
     margin-bottom: 1rem;
   }
+ 
   
+#reviews {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#reviews h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviews ul li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+#reviews ul li strong {
+  font-size: 1.2rem;
+  color: #d81b60;
+}
+
+#reviews ul li span {
+  font-size: 1rem;
+  color: #777;
+}
+
+#reviews p {
+  color: #777;
+}
+
+form {
+  margin-top: 2rem;
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input[type="text"], form input[type="number"], form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button {
+  background-color: #d81b60;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c2185b;
+}

@@ -7,6 +7,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(unique=True, blank=True, db_index=True)  # Slug field
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    summary = models.CharField(max_length=255, blank=True, default='') 
     description = models.TextField()
     image = models.ImageField(upload_to="product_images/", blank=True)
     is_featured = models.BooleanField(default=False)

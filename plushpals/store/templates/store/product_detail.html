@@ -18,4 +18,43 @@
     </div>
   </div>
 </section>
+
+<!-- Reviews Section -->
+<div id="reviews">
+  <h3>Customer Reviews</h3>
+
+  {% if product.feedback_set.all %}
+    <ul>
+      {% for review in product.feedback_set.all %}
+        <li>
+          <strong>{{ review.user_name }}</strong> 
+          <p>{{ review.comment }}</p>
+          <span>Rating: {{ review.rating }}/5</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No reviews yet. Be the first to review!</p>
+  {% endif %}
+
+  <!-- Review Form -->
+  <h4>Submit Your Review</h4>
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <label for="user_name">Your Name:</label>
+      <input type="text" id="user_name" name="user_name" required>
+    </div>
+    <div>
+      <label for="rating">Rating (1-5):</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required>
+    </div>
+    <div>
+      <label for="comment">Your Review:</label>
+      <textarea id="comment" name="comment" required></textarea>
+    </div>
+    <button type="submit">Submit Review</button>
+  </form>
+</div>
+</section>
 {% endblock %}
