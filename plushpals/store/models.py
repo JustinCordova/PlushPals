@@ -27,9 +27,9 @@ class Product(models.Model):
         super().save(*args, **kwargs)
 
 class Feedback(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='feedback_set')  # link to Product!
     user_name = models.CharField(max_length=100)
     # Email validator is automatically used, only add manually if you want to restrict a domain
-    user_email = models.EmailField()
     rating = models.IntegerField(
         choices=[(i, i) for i in range(1, 6)],
         validators=[MinValueValidator(1), MaxValueValidator(5)]

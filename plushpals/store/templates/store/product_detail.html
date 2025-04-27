@@ -27,9 +27,9 @@
     <ul>
       {% for review in product.feedback_set.all %}
         <li>
-          <strong>{{ review.user_name }}</strong> 
-          <p>{{ review.comment }}</p>
-          <span>Rating: {{ review.rating }}/5</span>
+          <strong>{{ review.user_name }}</strong>
+          <p>Rating: {{ review.rating }}/5</p> 
+          <p>{{ review.message }}</p>
         </li>
       {% endfor %}
     </ul>
