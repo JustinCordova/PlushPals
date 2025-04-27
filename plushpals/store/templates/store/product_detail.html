@@ -19,6 +19,19 @@
   </div>
 </section>
 
+  <!-- average rating -->
+  <h4>Average Rating</h4>
+  <div class="stars">
+    {% for i in range_list %}
+      {% if i <= avg_rating %}
+        <span class="star filled">&#9733;</span>  <!-- Filled star -->
+      {% else %}
+        <span class="star">&#9734;</span>  <!-- Empty star -->
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p>Average Rating: {{ avg_rating|floatformat:1 }} / 5.0</p>
+
 <!-- Reviews Section -->
 <div id="reviews">
   <h3>Customer Reviews</h3>

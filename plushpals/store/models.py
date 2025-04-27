@@ -26,6 +26,7 @@ class Product(models.Model):
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
+# feedback for products
 class Feedback(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='feedback_set')  # link to Product!
     user_name = models.CharField(max_length=100)
@@ -45,3 +46,20 @@ class Feedback(models.Model):
         if len(self.message) > 500:
             self.message = self.message[:497] + "..."
         super().save(*args, **kwargs)
+        
+# feedback for overall business
+class BusinessFeedback(models.Model):
+    user_name = models.CharField(max_length=100)
+    user_email = models.EmailField()
+    message = models.TextField()
+    submitted_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Feedback from {self.user_name}"
+
+    def save(self, *args, **kwargs):
+        # Optional: limit message length
+        if len(self.message) > 1000:
+            self.message = self.message[:997] + "..."
+        super().save(*args, **kwargs)
+

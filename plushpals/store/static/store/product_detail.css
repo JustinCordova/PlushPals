@@ -73,6 +73,29 @@
   color: #777;
 }
 
+/* average rating styling */
+.stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #bbb;
+}
+
+.star.filled {
+  color: #f39c12;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* form styling */
 form {
   margin-top: 2rem;
   background-color: #fafafa;

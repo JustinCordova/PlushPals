@@ -1,3 +1,7 @@
+#contact-form input, #contact-form textarea {
+  display: none;
+}
+
 #contact-header {
   background-color: #fff3f9;
   padding: 4rem 1.5rem;
@@ -94,28 +98,4 @@
 
 #contact-form button:hover {
   background-color: #c2185b;
-}
-
-/* Social Links */
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.socials a {
-  background-color: #fff;
-  border: 2px solid #ffcdd2;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  color: #d81b60;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.socials a:hover {
-  background-color: #ffe0ec;
-  border-color: #f8bbd0;
 }
