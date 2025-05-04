@@ -11,30 +11,29 @@
 <section id="product-detail">
   <div class="product-wrapper">
 
-    <div class = "product-design">
-
-    <img src="{{ product.image.url }}" alt="{{ product.name }}">
-  </div>
+    <img class = "product-design" src="{{ product.image.url }}" alt="{{ product.name }}">
+    
     <div class="product-info">
       <h2>{{ product.name }}</h2>
       <p class="price">${{ product.price }}</p>
       <p>{{ product.description }}</p>
+      <!-- average rating -->
+    <h4 >Average Rating</h4>
+    <div class="stars">
+      {% for i in range_list %}
+        {% if i <= avg_rating %}
+          <span class="star filled">&#9733;</span>  <!-- Filled star -->
+        {% else %}
+          <span class="star">&#9734;</span>  <!-- Empty star -->
+       {% endif %}
+      {% endfor %}
     </div>
+    <p>Average Rating: {{ avg_rating|floatformat:1 }} / 5.0</p>
+   </div>
   </div>
 </section>
 
-  <!-- average rating -->
-  <h4 >Average Rating</h4>
-  <div class="stars">
-    {% for i in range_list %}
-      {% if i <= avg_rating %}
-        <span class="star filled">&#9733;</span>  <!-- Filled star -->
-      {% else %}
-        <span class="star">&#9734;</span>  <!-- Empty star -->
-      {% endif %}
-    {% endfor %}
-  </div>
-  <p>Average Rating: {{ avg_rating|floatformat:1 }} / 5.0</p>
+
 
 <!-- Reviews Section -->
 <div id="reviews">

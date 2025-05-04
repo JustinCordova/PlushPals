@@ -148,9 +148,9 @@ form button:hover {
 /*designs cuz i got to go full out*/
 
 .product-design{
-  min-height: 10px;
+  height: 5rem;
   min-width: 20px;
-  border:solid salmon 10px;
+  border:solid #fff0f6 10px;
   border-radius: 20%;
   background-color: rgba(51, 51, 51, 0);
 
