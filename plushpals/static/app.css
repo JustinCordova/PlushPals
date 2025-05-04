@@ -66,3 +66,11 @@ body {
 #main-navigation nav a:hover {
   color: #e91e63;
 }
+
+/*Footer*/
+#website-footer{
+  background-color: #ffe0ec;
+  text-align: center;
+  padding: .03rem 1rem;
+  margin-top: 2rem;
+}
