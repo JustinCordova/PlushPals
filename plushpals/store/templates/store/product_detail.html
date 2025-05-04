@@ -10,7 +10,11 @@
 {% block content %}
 <section id="product-detail">
   <div class="product-wrapper">
+
+    <div class = "product-design">
+
     <img src="{{ product.image.url }}" alt="{{ product.name }}">
+  </div>
     <div class="product-info">
       <h2>{{ product.name }}</h2>
       <p class="price">${{ product.price }}</p>
@@ -20,7 +24,7 @@
 </section>
 
   <!-- average rating -->
-  <h4>Average Rating</h4>
+  <h4 >Average Rating</h4>
   <div class="stars">
     {% for i in range_list %}
       {% if i <= avg_rating %}
