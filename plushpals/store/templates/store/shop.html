@@ -10,7 +10,7 @@
     <a href="{{ product.get_absolute_url }}" class="product-card">
       <img src="{{ product.image.url }}" alt="{{ product.name }}" />
       <h3>{{ product.name }}</h3>
-      <p>${{ product.price }}</p>
+      <h4>${{ product.price }}</h4>
       <p>{{ product.summary }}</p>
     </a>
     {% empty %}
