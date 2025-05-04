@@ -12,13 +12,14 @@
   <div class="product-wrapper">
 
     <img class = "product-design" src="{{ product.image.url }}" alt="{{ product.name }}">
-    
+
     <div class="product-info">
       <h2>{{ product.name }}</h2>
       <p class="price">${{ product.price }}</p>
       <p>{{ product.description }}</p>
       <!-- average rating -->
     <h4 >Average Rating</h4>
+    <p class="sc">{{avg_rating|floatformat:1}} / 5.0</p>
     <div class="stars">
       {% for i in range_list %}
         {% if i <= avg_rating %}
@@ -28,7 +29,6 @@
        {% endif %}
       {% endfor %}
     </div>
-    <p>Average Rating: {{ avg_rating|floatformat:1 }} / 5.0</p>
    </div>
   </div>
 </section>
@@ -42,9 +42,17 @@
   {% if product.feedback_set.all %}
     <ul>
       {% for review in product.feedback_set.all %}
-        <li>
+        <li class = "review-card">
           <strong>{{ review.user_name }}</strong>
-          <p>Rating: {{ review.rating }}/5</p> 
+          <p>Rating:
+          {% for i in range_list %}
+            {% if i <= review.rating %}
+              <span class="star filled">&#9733;</span>  <!-- Filled star -->
+            {% else %}
+              <span class="star">&#9734;</span>  <!-- Empty star -->
+            {% endif %}
+          {% endfor %}
+        </p> 
           <p>{{ review.message }}</p>
         </li>
       {% endfor %}
@@ -63,7 +71,23 @@
     </div>
     <div>
       <label for="rating">Rating (1-5):</label>
-      <input type="number" id="rating" name="rating" min="1" max="5" required>
+      <input type="number" id="rating" name="rating" min="1" max="5" onchange="star()" required>
+      <p id = "inStar"></p>
+      <script>
+        function star() {
+          const x = document.getElementById("rating");
+          let st = "";
+          for (let i = 0; i <= 5; i ++){
+            if(i <= x ){
+              st += " <span>&#9733;</span>";
+            }
+            else{
+              st += "<span>&#9734;</span>"
+            }
+          }
+          document.getElementById(inStar).innerHTML = st;
+        }
+      </script>
     </div>
     <div>
       <label for="comment">Your Review:</label>
