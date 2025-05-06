@@ -18,33 +18,7 @@ The goal of this project is to create a Django-powered website where users can b
    - Admin login for managing products (add, edit, delete).
    - Feedback report listing all user comments.
 
-## III. Simplified File Structure
-```product_showcase/
-├── manage.py
-├── product_showcase/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── products/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── models.py
-│   ├── urls.py
-│   └── views.py
-├── templates/
-│   ├── base.html
-│   ├── products/
-│   │   ├── product_list.html
-│   │   ├── product_detail.html
-│   │   └── product_form.html
-│   └── reports/
-│       └── feedback_report.html
-└── static/
-    └── (CSS, images)
-```
-## IV. Project Requirements
+## III. Project Requirements
 
 1. **Models:**
    - `Product`: name, description, price, image.
@@ -70,27 +44,3 @@ The goal of this project is to create a Django-powered website where users can b
 
 7. **Feedback Report:**
    - Admin-only report page showing all feedback.
-
-## V. Project Evaluation
-
-- **Functionality (60%)**:
-  - Product list and detail views.
-  - Working feedback submission and display.
-  - Admin panel for product and feedback management.
-  
-- **HTML/CSS (20%)**:
-  - Basic but functional layout.
-  - Clean, minimal styling.
-
-- **Python/Django (20%)**:
-  - Proper use of models, views, templates, and forms.
-
-## VI. Project Tips for Beginners
-
-- Start with models and migrate them.
-- Get product display working first.
-- Add the feedback form after products are functional.
-- Use the Django admin panel to create initial products.
-- Keep CSS simple and use Django’s template inheritance.
-- Use print statements in views for debugging.
-- Don’t forget to create a superuser for the admin panel.
