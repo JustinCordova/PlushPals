@@ -71,23 +71,15 @@ def product_detail(request, slug):
 
 
 def contact_form(request):
-    
-    form = BusinessFeedbackForm()
-    
     if request.method == "POST":
         form = BusinessFeedbackForm(request.POST)
 
         if form.is_valid():
-            # Save to the BusinessFeedback model
-            BusinessFeedback.objects.create(
-                user_name=form.cleaned_data['user_name'],
-                user_email=form.cleaned_data['user_email'],
-                message=form.cleaned_data['message']
-            )
+            form.save()
             # Redirect to a success page after form submission
             return redirect('contact_success')
-        else:
-            form=BusinessFeedbackForm()
+    else:
+        form = BusinessFeedbackForm()
 
     return render(request, 'store/contact.html', {'form': form})
 
