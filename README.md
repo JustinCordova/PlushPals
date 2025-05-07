@@ -1,96 +1,69 @@
-# Simple Product Showcase & Feedback Prototype
+# 🧸 Plush Pals
 
-## I. Project Goal
+**Plush Pals** is a product showcase web application built using Django. It features a handpicked collection of adorable, handcrafted plushies. While it does not include e-commerce functionality, users can explore various plush toy entries and submit feedback in the form of reviews and star ratings.
 
-The goal of this project is to create a Django-powered website where users can browse products, provide feedback, and allow administrators to manage products and view feedback reports. The platform will help management make product decisions based on user feedback.
+## 🌐 Live Demo
+
+> _Coming Soon_ — Deployed on [Heroku/Vercel/Render] (add link when deployed)
+
+## 🛠 Tech Stack
+
+- **Frontend**: HTML5, CSS3
+- **Backend**: Django (Python)
+- **Database**: SQLite3 (development)
+- **Other Tools**: Django Template Language (DTL), Django Forms
 
 ## II. Core Features
 
-1. **Product Display:**
-   - List of 8+ products with details (name, description, image, price).
-   - Individual product pages with deeper details and feedback options.
+1. **🧸 Product Display:**
+   - Showcases 8+ plush toys with images, names, prices, and descriptions.
+   - Each product links to a detail page with extended information.
 
-2. **User Feedback:**
-   - Feedback mechanism with star ratings and comment boxes.
-   - User reviews and comments displayed in a blog-style layout.
+2. **⭐ User Feedback:**
+   - Users can submit reviews and assign star ratings (1–5).
+   - All feedback is displayed under the corresponding product in a blog-style layout.
 
-3. **Admin Panel:**
-   - Admin login for managing products (add, edit, delete).
-   - Feedback report listing all user comments.
+3. **🛠 Admin Panel:**
+   - Admin interface allows adding, editing, or deleting products.
+   - All user-submitted reviews are listed in a feedback report section.
 
-## III. Simplified File Structure
-```product_showcase/
-├── manage.py
-├── product_showcase/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── products/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── models.py
-│   ├── urls.py
-│   └── views.py
-├── templates/
-│   ├── base.html
-│   ├── products/
-│   │   ├── product_list.html
-│   │   ├── product_detail.html
-│   │   └── product_form.html
-│   └── reports/
-│       └── feedback_report.html
-└── static/
-    └── (CSS, images)
-```
-## IV. Project Requirements
+## 📁 Features Overview
 
-1. **Models:**
-   - `Product`: name, description, price, image.
-   - `Feedback`: product (foreign key), rating, comment.
+### 🏠 Home Page
 
-2. **Views:**
-   - Display product list and individual details.
-   - Handle feedback submissions.
-   - Admin-protected view to display all feedback.
+- Introduction to the seasonal collection (*Sakura Friends*)
+- Navigation links: `Home`, `Shop`, `About`, `Contact`
+- Clean, pastel-themed layout with the Plush Pals logo
 
-3. **Templates:**
-   - Product list, product details, and feedback report templates.
-   - Base template for layout consistency.
+### 🧸 Shop Page
 
-4. **Forms:**
-   - Feedback form for users.
+- Features both “Featured Plushies” and “All Plushies”
+- Product cards include image, name, price, and short description
 
-5. **Blog Features:**
-   - Blog-like comments for each product page.
+### 📄 Product Detail Page
 
-6. **Admin Panel:**
-   - Register `Product` and `Feedback` models.
+- Larger image with full description
+- Displays average rating with star icons
+- Includes customer reviews with name and text
+- Interactive review form (Name, Rating, Review)
 
-7. **Feedback Report:**
-   - Admin-only report page showing all feedback.
+### 💌 Contact Page
 
-## V. Project Evaluation
+- Contact info section: support email, phone number, and address
+- “Send Us a Message” form to collect user input
 
-- **Functionality (60%)**:
-  - Product list and detail views.
-  - Working feedback submission and display.
-  - Admin panel for product and feedback management.
-  
-- **HTML/CSS (20%)**:
-  - Basic but functional layout.
-  - Clean, minimal styling.
+### 🧵 About Page
 
-- **Python/Django (20%)**:
-  - Proper use of models, views, templates, and forms.
+- Tells the Plush Pals story
+- Highlights values: Craftsmanship, Sustainability, Community
 
-## VI. Project Tips for Beginners
+## 📌 Credits
 
-- Start with models and migrate them.
-- Get product display working first.
-- Add the feedback form after products are functional.
-- Use the Django admin panel to create initial products.
-- Keep CSS simple and use Django’s template inheritance.
-- Use print statements in views for debugging.
-- Don’t forget to create a superuser for the admin panel.
+This project was developed as part of the **IS218 Final Project (Spring 2025)** at NJIT.
+
+**Created by:**
+- Justin Cordova  
+- Taryn Faccenda  
+- Jonathan Ocampo  
+- Katelyn Reyes  
+- Jasmin Rutter
