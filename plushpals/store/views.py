@@ -56,10 +56,7 @@ def contact_form(request):
         form = BusinessFeedbackForm(request.POST)
         if form.is_valid():
             form.save()
-<<<<<<< HEAD
             # Redirect to a success page after form submission
-=======
->>>>>>> ece669231097bf3d376df2b716a181163dcef1a9
             return redirect('contact_success')
     else:
         form = BusinessFeedbackForm()

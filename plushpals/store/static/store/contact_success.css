@@ -1,0 +1,71 @@
+/* contact_success.css */
+
+#contact-success {
+    background-color: #fff3f9;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #ffcdd2;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 3rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#contact-success h2 {
+    color: #d81b60;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact-success p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#contact-success a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #d81b60;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact-success a:hover {
+    background-color: #c2185b;
+}
+
+.success-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.success-actions .button {
+    background-color: #d81b60;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.success-actions .button:hover {
+    background-color: #c2185b;
+}
+
+.success-actions .button.secondary {
+    background-color: #fff;
+    color: #d81b60;
+    border: 2px solid #d81b60;
+}
+
+.success-actions .button.secondary:hover {
+    background-color: #ffe3ec;
+}
