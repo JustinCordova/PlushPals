@@ -1,5 +1,6 @@
 #product-detail {
-    padding: 2.5rem 1rem;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
   }
@@ -33,6 +34,11 @@
     color: #444;
     margin-bottom: 1rem;
   }
+
+.side-part{
+  object-fit: contain;
+
+}
  
   
 #reviews {
@@ -112,14 +118,18 @@ h4 {
 
 /* form styling */
 form {
-  
-  margin-top: 2rem;
+  width:60%;
+  margin: 2rem auto;
   background-color: #fff0f6;
   padding: 1.5rem;
+  border: solid #c2185b 2px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
-
+form h1{
+  color:  #d81b60;
+  text-align: center;
+}
 form div {
   margin-bottom: 1rem;
 }
