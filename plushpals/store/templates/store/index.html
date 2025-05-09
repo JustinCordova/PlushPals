@@ -24,11 +24,10 @@
   <h2>Featured Plushies</h2>
   <div class="product-grid">
     {% for product in featured_products %}
+    <a href="{{ product.get_absolute_url }}">
     <div class="product-card">
       {% if product.image %}
-      <a href="{{ product.get_absolute_url }}">
         <img src="{{ product.image.url }}" alt="{{ product.name }}" />
-      </a>
       {% else %}
       <img
         src="{% static 'store/images/default_plush.png' %}"
@@ -38,6 +37,7 @@
       <h3>{{ product.name }}</h3>
       <p>${{ product.price }}</p>
     </div>
+    </a>
     {% empty %}
     <p>No featured plushies right now!</p>
     {% endfor %}
@@ -54,10 +54,5 @@
   </p>
 </section>
 
-<footer id="website-footer">
-  <div class="footer-info">
-    <p>&copy; IS218 Final Project, 2025 | Plush Pals</p>
-  </div>
-</footer>
 
 {% endblock %}
