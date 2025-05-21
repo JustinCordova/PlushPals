@@ -1,0 +1,124 @@
+#feedback-form-section {
+    background: linear-gradient(145deg, #ffe4f0, #fff1f7);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #ffcdd2;
+  }
+  
+  #feedback-form-section h2 {
+    color: #d81b60;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #feedback-form-section form {
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  #feedback-form-section input,
+  #feedback-form-section select,
+  #feedback-form-section textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #ffcdd2;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(255, 192, 203, 0.08);
+    transition: border-color 0.2s ease;
+  }
+  
+  #feedback-form-section input:focus,
+  #feedback-form-section textarea:focus,
+  #feedback-form-section select:focus {
+    border-color: #d81b60;
+    outline: none;
+  }
+  
+  #feedback-form-section button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  #feedback-form-section button:hover {
+    background-color: #c2185b;
+  }
+  
+  /* Feedback List Styling */
+  #feedback {
+    padding: 3rem 1.5rem;
+    background-color: #fffafa;
+    text-align: center;
+  }
+  
+  #feedback h2 {
+    color: #c2185b;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feedback-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  .feedback-card {
+    background-color: #fff0f6;
+    border: 1px solid #ffd6e8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  }
+  
+  .feedback-card h3 {
+    font-size: 1.2rem;
+    color: #b71c5c;
+    margin: 0 0 0.4rem;
+  }
+  
+  .feedback-card span {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .feedback-card p {
+    margin: 0.4rem 0 0.8rem;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+  
+  .feedback-card small {
+    color: #999;
+    font-size: 0.85rem;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    #feedback-form-section form {
+      width: 90%;
+    }
+  
+    .feedback-card {
+      padding: 1rem;
+    }
+  }
+  

@@ -1,0 +1,187 @@
+#product-detail {
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  
+  .product-wrapper img {
+    width: 50%;
+    border-radius: 10%;
+    object-fit: contain;
+    border: solid #fff0f6 0.5rem;
+  }
+  
+  .product-info {
+    max-width: 35%;
+  }
+  
+  .product-info h2 {
+    font-size: 2rem;
+    color: #d81b60;
+  }
+  
+  .product-info .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+.side-part{
+  object-fit: contain;
+
+}
+ 
+  
+#reviews {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#reviews h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#reviews ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reviews ul li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d81b60;
+}
+
+#reviews ul li strong {
+  font-size: 1.2rem;
+  color: #d81b60;
+}
+
+#reviews ul li span {
+  font-size: 1rem;
+  color: #777;
+}
+
+#reviews p {
+  color: #777;
+}
+
+.review-card{
+  background-color: #fffcfd;
+  padding: 1rem;
+
+}
+
+/* average rating styling */
+.stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 0%;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #d81b60;
+}
+
+.star.filled {
+  color:  #d81b60;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sc{
+  font-size: 10px;
+  color:#d81b60;
+  margin-bottom: 0%;
+
+}
+
+/* form styling */
+form {
+  width:60%;
+  margin: 2rem auto;
+  background-color: #fff0f6;
+  padding: 1.5rem;
+  border: solid #c2185b 2px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+form h1{
+  color:  #d81b60;
+  text-align: center;
+}
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input[type="text"]{
+  width: 75%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d81b60;
+  border-radius: 5px;
+  
+}
+
+form input[type="number"]{
+  width: 5%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d81b60;
+  border-radius: 5px;
+  
+}
+
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+  width: 95%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #d81b60;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #d81b60;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  left:50%;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #c2185b;
+}
