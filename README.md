@@ -16,10 +16,12 @@
 ## II. Core Features
 
 1. **🧸 Product Display:**
+
    - Showcases 8+ plush toys with images, names, prices, and descriptions.
    - Each product links to a detail page with extended information.
 
 2. **⭐ User Feedback:**
+
    - Users can submit reviews and assign star ratings (1–5).
    - All feedback is displayed under the corresponding product in a blog-style layout.
 
@@ -31,7 +33,7 @@
 
 ### 🏠 Home Page
 
-- Introduction to the seasonal collection (*Sakura Friends*)
+- Introduction to the seasonal collection (_Sakura Friends_)
 - Navigation links: `Home`, `Shop`, `About`, `Contact`
 - Clean, pastel-themed layout with the Plush Pals logo
 
@@ -62,8 +64,9 @@
 This project was developed as part of the **IS218 Final Project (Spring 2025)** at NJIT.
 
 **Created by:**
-- Justin Cordova  
-- Taryn Faccenda  
-- Jonathan Ocampo  
-- Katelyn Reyes  
+
+- Justin Cordova
+- Taryn Faccenda
+- Jonathan Ocampo
+- Katelyn Reyes
 - Jasmin Rutter
