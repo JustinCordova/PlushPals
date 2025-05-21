@@ -120,8 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # if you still use global static
-    BASE_DIR / "store" / "static",  # <- include this line
+    BASE_DIR / "store" / "static",
 ]
 
 
