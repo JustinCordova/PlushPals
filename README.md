@@ -59,6 +59,52 @@
 - Tells the Plush Pals story
 - Highlights values: Craftsmanship, Sustainability, Community
 
+# Django Project Setup with Specific Dependencies
+
+This guide outlines the steps to set up a Django project with the following dependencies:
+
+- **Django 5.1.5**
+- **Pillow 10.2.0**
+
+---
+
+## 🔧 Prerequisites
+
+Make sure you have Python 3.10+ and `pip` installed. You can check with:
+
+```bash
+python --version
+pip --version
+```
+
+
+### 1. Create a Virutal Environment (Recommended)
+```bash
+cd plushpals
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 2. Install Requirements
+```bash
+pip3 install -r requirements.txt
+```
+
+### 3. Run the Server
+```bash
+./runserver.sh
+# or
+python3 manage.py migrate
+python3 manage.py runserver
+```
+
+## 🔑 Admin Login
+```bash
+username: admin
+email: admin@plushpals.com
+password: Sunny42Moon!
+```
+
 ## 📌 Credits
 
 This project was developed as part of the **IS218 Final Project (Spring 2025)** at NJIT.
