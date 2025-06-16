@@ -59,7 +59,7 @@
 - Tells the Plush Pals story
 - Highlights values: Craftsmanship, Sustainability, Community
 
-# Django Project Setup with Specific Dependencies
+## Django Project Setup with Specific Dependencies
 
 This guide outlines the steps to set up a Django project with the following dependencies:
 
