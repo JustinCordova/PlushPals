@@ -4,7 +4,8 @@
 
 ## 🌐 Live Demo
 
-> _Coming Soon_ — Deployed on [Heroku/Vercel/Render] (add link when deployed)
+Deployed on [Render](https://plushpals.onrender.com/)
+
 
 ## 🛠 Tech Stack
 
