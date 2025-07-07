@@ -26,6 +26,14 @@ class Product(models.Model):
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
+    def get_static_image_url(self):
+        """Get the static file URL for the product image"""
+        if self.image:
+            # Extract filename from the image path
+            filename = self.image.name.split('/')[-1]
+            return f'/static/store/Images/{filename}'
+        return None
+
 # feedback for products
 class Feedback(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='feedback_set')  # link to Product!

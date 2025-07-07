@@ -8,7 +8,7 @@
   <div class="product-grid">
     {% for product in products %}
     <a href="{{ product.get_absolute_url }}" class="product-card">
-      <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+      <img src="{{ product.get_static_image_url }}" alt="{{ product.name }}" />
       <h3>{{ product.name }}</h3>
       <h4>${{ product.price }}</h4>
       <p>{{ product.summary }}</p>
